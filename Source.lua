@@ -68,7 +68,7 @@ local Player = Players.LocalPlayer
 local Mouse = Player:GetMouse()
 
 --local SelfModules = {UI = RS:IsStudio() and require(script.Parent:FindFirstChild("UI.lua")) or loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularSVyixiu/UI-Library/refs/heads/main/UI.lua")())}
-local SelfModules = {UI = require(script.Parent:FindFirstChild("UI.lua"))}
+local SelfModules = {UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularSVyixiu/newUI-Library/refs/heads/main/UI.lua"))()}
 local Storage = { Connections = {ForAuth = {}}, Tween = { Cosmetic = {} } }
 
 local ListenForInput = false
